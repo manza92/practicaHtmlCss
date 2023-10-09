@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de ejemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="detitle">Título del formulario</h1>
+    <p id="dedescription">Breve explicación del formulario</p>
+
+    <form id="desurvey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="number" id="number-label">Phone:</label>
+        <input type="number" id="number" name="number" min="0" max="100" required>
+
+        <select id="dropdown">
+            <option value="">Selecciona una opción</option>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+        </select>
+
+        <div>
+            <label>Botones de radio:</label><br />
+            <input type="radio" name="radio-group" value="opcion1">Opción 1<br />
+            <input type="radio" name="radio-group" value="opcion2">Opción 2
+        </div>
+
+        <div>
+            <label>Casillas de verificación:</label><br />
+            <input type="checkbox" name="checkbox-group[]" value="opcion1">Opción 1<br />
+            <input type="checkbox" name="checkbox-group[]" value="opcion2">Opción 2
+        </div>
+
+        <label for="comments">Comentarios adicionales:</label><br />
+        <textarea id="comments"></textarea><br />
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
