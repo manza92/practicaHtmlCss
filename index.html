@@ -3,44 +3,45 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="theme-color" content="#1e7bbf">
         <title>Formulario de ejemplo</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <h1 id="detitle">Título del formulario</h1>
-        <p id="dedescription">Breve explicación del formulario</p>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
 
-        <form id="desurvey-form">
+        <form id="survey-form">
             <label for="name" id="name-label">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" placeholder="Enter your name" id="name" name="name" required>
 
             <label for="email" id="email-label">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" placeholder="Enter your email" id="email" name="email" required>
 
             <label for="number" id="number-label">Phone:</label>
-            <input type="number" id="number" name="number" min="0" max="100" required>
+            <input type="number" placeholder="Enter your phone number" id="number" name="number" min="0" max="100" required>
 
             <select id="dropdown">
-                <option value="">Selecciona una opción</option>
-                <option value="opcion1">Opción 1</option>
-                <option value="opcion2">Opción 2</option>
+                <option value="">Select an option</option>
+                <option value="opcion1">Option 1</option>
+                <option value="opcion2">Option 2</option>
             </select>
 
             <div>
                 <label></label>
-                <input type="radio" name="radio-group" value="opcion1">Opción 1
-                <input type="radio" name="radio-group" value="opcion2">Opción 2
+                <input type="radio" name="radio-group" value="opcion1">Option 1
+                <input type="radio" name="radio-group" value="opcion2">Option 2
             </div>
 
             <div>
-                <label>Casillas de verificación:</label>
+                <label></label>
                 <input type="checkbox" name="checkbox-group[]" value="opcion1">Opción 1
                 <input type="checkbox" name="checkbox-group[]" value="opcion2">Opción 2
             </div>
 
-            <label for="comments">Comentarios adicionales:</label>
-            <textarea id="comments"></textarea>
+            <label for="comments">Any comments or suggestions?:</label>
+            <textarea id="comments" placeholder="add a comment or suggestion"></textarea>
 
             <button type="submit" id="submit">Submit</button>
         </form>
